@@ -82,8 +82,9 @@
             </div>            
         </div>
         <!-- ?  productModal -->
+        <!-- * 加上點旁邊不會消失 -->
         <div id="productModal" ref="productModal" class="modal fade" tabindex="-1" aria-labelledby="productModalLabel"
-            aria-hidden="true">
+            aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content border-0">
                     <div class="modal-header text-white" :class="{'bg-warning': !isNew, 'bg-success': isNew}">
@@ -224,7 +225,8 @@
             </div>
         </div>
         <!-- ? errLoginModal -->
-        <div class="modal" tabindex="-1" id="errLoginModal">
+        <!-- * 加上點旁邊不會消失 -->
+        <div class="modal" tabindex="-1" id="errLoginModal" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog pb-3">
                 <div class="modal-content">
                     <div class="modal-header bg-danger">

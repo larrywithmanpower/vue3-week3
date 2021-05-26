@@ -26,6 +26,14 @@ const app = Vue.createApp({
                         window.location = 'product.html';
                     } else {
                         errModal.show();
+                        // * 增加錯誤MODAL1.5s關閉，以及清空user資料
+                        setTimeout(() => {
+                            errModal.hide();
+                        }, 1500);
+                        this.user = {
+                            username: '',
+                            password: ''
+                        }
                     }
                 })
                 .catch((err) => {
