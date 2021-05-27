@@ -18,7 +18,7 @@ const app = Vue.createApp({
             axios.post(url ,this.user)
                 .then((res) => {
                     if (res.data.success) {
-                        // ! 重構取得token與expired
+                        // ! 解構取得token與expired
                         const {token, expired} = res.data;
                         // ! 存取token至cookie
                         document.cookie = `myToken=${token}; expires=${new Date(expired)}`;
