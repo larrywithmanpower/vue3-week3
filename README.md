@@ -1,5 +1,5 @@
-# vue3-week3
-Vue3 第三周主線
+# vue3-Option api
+Vue3 第三周
 ## github-page
 ### <a href="https://larrywithmanpower.github.io/vue3-week3/">index</a>
 <a href="https://larrywithmanpower.github.io/vue3-week3/LV1/index.html">LV1</a>
